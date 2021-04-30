@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetVips" Version="2.0.0" />
+    <PackageReference Include="NetVips.Native.win-x64" Version="8.10.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiler.Models\Tiler.Models.csproj" />
+  </ItemGroup>
+</Project>

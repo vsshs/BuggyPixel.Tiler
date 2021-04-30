@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xml:lang="EN" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script src="https://vsshs-com.github.io/Panorama.OperaHouse/openseadragon.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body,
+        #seadragon-viewer {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="seadragon-viewer"></div>
+
+    <script>
+
+			var sources = {
+			  Image: {
+				xmlns: "http://schemas.microsoft.com/deepzoom/2008",
+				Url: "[FOLDER]",
+				Format: "jpg",
+				Overlap: "[OVERLAP]",
+				TileSize: "[TILESIZE]",
+				Size: {
+				  Width:  "[WIDTH]",
+				  Height: "[HEIGHT]"
+				}
+			  }
+			};
+			OpenSeadragon.pixelDensityRatio = 1
+			var viewer = OpenSeadragon({
+			  id: "seadragon-viewer",
+			  prefixUrl: "https://vsshs-com.github.io/Panorama.OperaHouse/images/",
+			  tileSources: sources,
+			  showNavigator: true,
+			});
+    </script>
+
+</body>
+</html>
