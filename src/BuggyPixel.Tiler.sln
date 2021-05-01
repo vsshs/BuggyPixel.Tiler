@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TilerApp", "TilerApp\TilerApp.csproj", "{8EF30134-F22A-4FDE-8263-52C10DAC8708}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainTilerAndUploaderApp", "TilerApp\MainTilerAndUploaderApp.csproj", "{8EF30134-F22A-4FDE-8263-52C10DAC8708}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureUploaderApp", "AzureUploaderApp\AzureUploaderApp.csproj", "{4D23AE62-28E8-4F5A-8187-9CC5AE208887}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiler", "Tiler\Tiler.csproj", "{4E1236C2-8CB9-4B2E-9D4C-A1525EFA9221}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TilerTests", "TilerTests\TilerTests.csproj", "{29ED8377-46F5-43A4-B7E5-F610EBD990C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiler.UnitTests", "TilerTests\Tiler.UnitTests.csproj", "{29ED8377-46F5-43A4-B7E5-F610EBD990C2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreviewGenerator", "PreviewGenerator\PreviewGenerator.csproj", "{9AEC3FDA-335E-484B-BC9F-F49699025779}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8410ED23-0EF5-4141-81B1-58C88A27B0DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiler.Models", "Tiler.Models\Tiler.Models.csproj", "{71BA9D0A-30EB-4210-ADD2-D14E4FCBB9E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiler.Models", "Tiler.Models\Tiler.Models.csproj", "{71BA9D0A-30EB-4210-ADD2-D14E4FCBB9E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreviewGenerator.UnitTests", "PreviewGenerator.Tests\PreviewGenerator.UnitTests.csproj", "{1FED1AE2-0AC0-434F-A11A-037470FED7C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,12 +49,17 @@ Global
 		{71BA9D0A-30EB-4210-ADD2-D14E4FCBB9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71BA9D0A-30EB-4210-ADD2-D14E4FCBB9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71BA9D0A-30EB-4210-ADD2-D14E4FCBB9E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FED1AE2-0AC0-434F-A11A-037470FED7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FED1AE2-0AC0-434F-A11A-037470FED7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FED1AE2-0AC0-434F-A11A-037470FED7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FED1AE2-0AC0-434F-A11A-037470FED7C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{29ED8377-46F5-43A4-B7E5-F610EBD990C2} = {8410ED23-0EF5-4141-81B1-58C88A27B0DE}
+		{1FED1AE2-0AC0-434F-A11A-037470FED7C8} = {8410ED23-0EF5-4141-81B1-58C88A27B0DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B639B564-F8F7-4CCC-AC5B-40933A7EF072}

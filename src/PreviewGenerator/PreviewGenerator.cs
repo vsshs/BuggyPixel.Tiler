@@ -12,7 +12,7 @@ namespace PreviewGenerator
         public string GeneratePreviewHtmlFromTemplate(GeneratorRequest generatorRequest)
         {
             var template = File.ReadAllText("preview-template.html");
-            template = template.Replace("[FOLDER]", $"{generatorRequest.ImagesFolder.Name}/");
+            template = template.Replace("[FOLDER]", $"{generatorRequest.ImagesFolderName}/");
             template = template.Replace("[OVERLAP]", $"{generatorRequest.OverlapPx}");
             template = template.Replace("[TILESIZE]", $"{generatorRequest.TileSizePx}");
             template = template.Replace("[WIDTH]", $"{generatorRequest.ImageWidth}");

@@ -1,5 +1,4 @@
-﻿using NetVips;
-using PreviewGenerator;
+﻿using PreviewGenerator;
 using System;
 using System.IO;
 using Tiler;
@@ -67,7 +66,7 @@ namespace TilerApp
             {
                 ImageHeight = tilingResult.ImageHeight,
                 ImageWidth = tilingResult.ImageWidth,
-                ImagesFolder = new DirectoryInfo(tilingResult.OutputFolder),
+                ImagesFolderName = tilingResult.OutputFolder,
                 OverlapPx = dzSaveOptions.OverlapPx,
                 TileSizePx = dzSaveOptions.TileSizePx
             };

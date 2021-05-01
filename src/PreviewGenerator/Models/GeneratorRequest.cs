@@ -11,6 +11,6 @@ namespace PreviewGenerator.Models
         public int TileSizePx { get; set; }
         public int ImageWidth { get; set; }
         public int ImageHeight { get; set; }
-        public DirectoryInfo ImagesFolder { get; set; }
+        public string ImagesFolderName { get; set; }
     }
 }
