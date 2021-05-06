@@ -1,0 +1,9 @@
+language: csharp
+mono: none
+dotnet: 5.0
+script:
+ - dotnet build src/BuggyPixel.Tiler.sln
+ - dotnet test src/BuggyPixel.Tiler.sln 
+branches:
+  only:
+  - master
